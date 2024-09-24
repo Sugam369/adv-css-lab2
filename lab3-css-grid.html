@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<title>Lab 3 | CSS Grid</title>
+		<meta name="description" content="A CSS Grid challenge to test your new layout skills">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			.container {
+        display: grid;
+        grid-template-columns: 120px 1fr 1fr 120px; /* Adjust column width */
+        grid-template-rows: 80px 40px 1fr 1fr 80px; /* Adjust row height */
+        gap: 5px; /* Smaller gutter */
+        height: 60vh; /* Smaller overall height */
+		width: 80rem;
+		margin: 0 auto;
+      }
+
+      .item {
+        padding: 5px; /* Smaller padding */
+        color: black;
+        font-size: 1rem; /* Smaller text */
+        text-align: left;
+      }
+
+      .item-a {
+        background-color: #f4b5b5;
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .item-b {
+        background-color: #f3d9b1;
+        grid-area: 2 / 1 / 3 / 5;
+		text-align:center;
+      }
+      .item-c {
+        background-color: #d3c9f1;
+        grid-area: 1 / 1 / 3 / 2;
+      }
+      .item-d {
+        background-color: #f5f3af;
+        grid-area: 5 / 1 / 6 / 5;
+      }
+      .item-e {
+        background-color: #d9c9b1;
+        grid-area: 3 / 2 / 4 / 4;
+      }
+      .item-f {
+        background-color: #d8add8;
+        grid-area: 4 / 2 / 5 / 3;
+      }
+      .item-g {
+        background-color: #f3b18d;
+        grid-area: 4 / 3 / 5 / 4;
+      }
+      .item-h {
+        background-color: #a8e1e8;
+        grid-area: 4 / 4 / 5 / 5;
+      }
+      .item-i {
+        background-color: #b7d4f3;
+        grid-area: 1 / 4 / 2 / 5;
+      }
+      .item-j {
+        background-color: #ab915c;
+        grid-area: 4 / 4 / 5 / 5;
+      }
+      .item-k {
+        background-color: #a8e1a8;
+        grid-area: 1 / 2 / 2 / 4;
+      }
+      .item-l {
+        background-color: #c7d7a3;
+        grid-area: 3 / 4 / 4 / 5;
+      }
+
+      h2 {
+        margin: 0;
+      }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item item-a">
+				<h2>Branding</h2>
+			</div>
+			<div class="item item-b">
+				<h2>Global Nav</h2>
+			</div>
+			<div class="item item-c">
+				<h2>Local Nav</h2>
+			</div>
+			<div class="item item-d">
+				<h2>Footer</h2>
+			</div>
+			<div class="item item-e">
+				<h2>Top Story</h2>
+			</div>
+			<div class="item item-f">
+				<h2>Global News</h2>
+			</div>
+			<div class="item item-g">
+				<h2>National News</h2>
+			</div>
+			<div class="item item-h">
+				<h2>Local News</h2>
+			</div>
+			<div class="item item-i">
+				<h2>Search</h2>
+			</div>
+			<div class="item item-j">
+				<h2>Market Info</h2>
+			</div>
+			<div class="item item-k">
+				<h2>Advertising 1</h2>
+			</div>
+			<div class="item item-l">
+				<h2>Advertising 2</h2>
+			</div>
+		</div><!-- .container -->
+	</body>
+</html>
